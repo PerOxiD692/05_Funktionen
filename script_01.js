@@ -71,3 +71,23 @@ function ausgabeNameParams2 (firstName, familyName) // Parameter
 }
 
 // ausgabeNameParams2("Jan-Daniel", "Martin");
+
+
+/***** Funktionen 03b *****/
+
+//test
+output(getString("Frank","Ziehm"));
+
+// 1. Job Sting zusammensetzen
+function getString(firstName,familyName) {
+    let gap = " ";
+    let outputStr = "Hallo " + firstName + gap + familyName + "!";
+    return outputStr; // ---> Daten werden an die Stelle des calls übergeben!!!
+    console.log("TEST"); // <--- Wird nicht mehrn ausgegegben. return beendet die funktion!
+}
+
+// 2. Job: Ausgabe
+//output("hi"); // Unit-test - TDD (Test driven Development)
+function output(outputStr) {
+    console.log(outputStr);      
+}
