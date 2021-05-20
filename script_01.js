@@ -32,7 +32,7 @@ function ausgabeName ()
 function ausgabeNameParam (firstName) //Parameter, wird hier definiert
 {
     // wenn firstName leer, dann "nobody"
-    if (firstName == undefined) {
+    if (firstName == undefined || firstName == "") {
         firstName = "nobody";
     }
     console.log("Hallo " + firstName + "!");    
@@ -40,4 +40,6 @@ function ausgabeNameParam (firstName) //Parameter, wird hier definiert
 
 ausgabeNameParam("Deniz"); // Call + Argument
 ausgabeNameParam(); // Call ohne Argument
-//ausgabeNameParam(prompt("Bitte Namen eingeben")); // Call mit Abfrage
+ausgabeNameParam(prompt("Bitte Namen eingeben")); // Call mit Abfrage
+
+
