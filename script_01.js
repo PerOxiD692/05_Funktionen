@@ -38,8 +38,18 @@ function ausgabeNameParam (firstName) //Parameter, wird hier definiert
     console.log("Hallo " + firstName + "!");    
 }
 
-ausgabeNameParam("Deniz"); // Call + Argument
-ausgabeNameParam(); // Call ohne Argument
-ausgabeNameParam(prompt("Bitte Namen eingeben")); // Call mit Abfrage
+// ausgabeNameParam("Deniz"); // Call + Argument
+// ausgabeNameParam(); // Call ohne Argument
+// ausgabeNameParam(prompt("Bitte Namen eingeben")); // Call mit Abfrage
 
 
+/***** Funktionen 02c *****/
+// Mehrere Parameter
+
+function ausgabeNameParams (firstName, familyName) // Parameter
+{
+    console.log("Hallo " + firstName + " " + familyName + "!");    
+}
+
+ausgabeNameParams("Jan-Daniel", "Martin");
+ausgabeNameParams(prompt("Bitte Vornamen eingeben:"), prompt("Bitte Nachnamen eingeben:"));
