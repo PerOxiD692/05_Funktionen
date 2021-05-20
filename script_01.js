@@ -51,5 +51,23 @@ function ausgabeNameParams (firstName, familyName) // Parameter
     console.log("Hallo " + firstName + " " + familyName + "!");    
 }
 
-ausgabeNameParams("Jan-Daniel", "Martin");
-ausgabeNameParams(prompt("Bitte Vornamen eingeben:"), prompt("Bitte Nachnamen eingeben:"));
+// ausgabeNameParams("Jan-Daniel", "Martin");
+// ausgabeNameParams(prompt("Bitte Vornamen eingeben:"), prompt("Bitte Nachnamen eingeben:"));
+
+
+/***** Funktionen 03a *****/
+// Vorbereitung
+//Postulat: one funtion = one Job (uncle Bob)
+//SRP - single responsibility principle
+
+function ausgabeNameParams2 (firstName, familyName) // Parameter
+{
+    // 1. Job - string composing
+    let gap = " ";
+    let outputStr = "Hallo " + firstName + gap + familyName + "!";
+
+    // 2. Job - output
+    console.log(outputStr);    
+}
+
+// ausgabeNameParams2("Jan-Daniel", "Martin");
